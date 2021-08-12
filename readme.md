@@ -1,12 +1,12 @@
-Hello! This is a git repo for me to learn wtf is opengl shading
+Hello! This is a git repo for me to learn and just be a kinda test playground for js 
+
+8/12/21
 
 Using vite and 3js 
 
+Testing 3d js using three js and messing with shading
 run the following command
     - npm run dev 
 to run on local host
-
-Open so add what u want
-
 
 Also using vim for the first time
