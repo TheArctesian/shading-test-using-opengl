@@ -4,3 +4,22 @@ canvas {
   left: 0;
 
 }
+
+.gitHub_button {
+  transition: all ease-in-out 200ms;
+  position: absolute;
+  bottom: 90%;
+  left: 90%;
+  width: 5%;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 10%;
+  background-color: white;
+  border-radius: 300px;
+}
+
+.gitHub_button:hover {
+  bottom: 80%;
+  left: 85%;
+  width: 10%;
+}

@@ -1,9 +1,16 @@
-import './style.css'
+import './style.css';
 
 import * as THREE from 'three';
 import {
   OrbitControls
 } from 'three/examples/jsm/controls/OrbitControls';
+import {
+  GLTFLoader
+} from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+
+const loader = new GLTFLoader();
+
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -19,8 +26,20 @@ camera.position.setX(-3);
 
 renderer.render(scene, camera);
 
-// Torus
 
+//ebi
+loader.load('3d models/ebi model.gltf', function (gltf) {
+
+  scene.add(gltf.scene);
+
+}, undefined, function (error) {
+
+  console.error(error);
+
+});
+
+// Torus
+/*
 const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
 const material = new THREE.MeshStandardMaterial({
   color: 0xff6347
@@ -28,7 +47,9 @@ const material = new THREE.MeshStandardMaterial({
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
+*/
 
+//ligting
 const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5, 5, 5);
 
@@ -58,9 +79,12 @@ Array(200).fill().forEach(addStar);
 function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
+  /*for torus
   torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.02;
+*/
+
 
   controls.update();
 }
