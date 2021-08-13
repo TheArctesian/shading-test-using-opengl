@@ -22,7 +22,8 @@
 .gitHub_button:hover {
     transition: all ease-in-out 500ms;
     width: 3em;
-    top: 2%;
+    top: 1.5%;
+    left: 83%;
 }
 
 h1 {
