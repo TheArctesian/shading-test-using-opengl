@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /*
 
@@ -25,12 +26,15 @@ without the position absolute fuking me.
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 
+
+ALSO DONT TRY AND AND OPEN THIS ON A SMALL SCREEN CUZ FUK U I DONT WANT TO DO
+RESPONSIVE STUFF RN 
 */
 :root {
     /*Color Pallet */
 
     --dblue: #0066E7;
-    --lblue: #0070FF;
+    --lblue: #1ba4ff;
     --yellow: #FFE135;
     --orange: #F18009;
     --red: #D4070F;
@@ -48,12 +52,13 @@ without the position absolute fuking me.
 
 body {
     background: #272727;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Press Start 2P',
+        cursive;
 }
 
 .navMenu {
     position: absolute;
-    top: 5%;
+    top: 2.5em;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
 }
@@ -101,6 +106,7 @@ body {
 
 
 .navMenu a:nth-child(1):hover~.dot {
+    background: var(--yellow);
     -webkit-transform: translateX(40px);
     transform: translateX(40px);
     -webkit-transition: all 0.2s ease-in-out;
@@ -110,9 +116,9 @@ body {
 }
 
 .navMenu a:nth-child(2):hover~.dot {
-    background: var(--white);
-    -webkit-transform: translateX(120px);
-    transform: translateX(120px);
+    background: var(--red);
+    -webkit-transform: translateX(130px);
+    transform: translateX(130px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -120,23 +126,102 @@ body {
 
 .navMenu a:nth-child(3):hover~.dot {
     background: var(--yellow);
-    -webkit-transform: translateX(206px);
-    transform: translateX(206px);
+    -webkit-transform: translateX(230px);
+    transform: translateX(230px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 
 .navMenu a:nth-child(4):hover~.dot {
-    background: var(--yellow);
-    -webkit-transform: translateX(291px);
-    transform: translateX(291px);
+
+    background: var(--dblue);
+    -webkit-transform: translateX(330px);
+    transform: translateX(330px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 
 #line {
-    transform: translateY(60px);
-    border-radius: 10px
+    transform: translateY(70px);
+    border-radius: 20px;
+}
+
+h1 {
+    color: var(--white);
+    margin-top: 120px;
+    text-align: center;
+}
+
+p {
+    margin: 30px;
+    text-align: center;
+    transform: translateY(220px);
+}
+
+h1 {
+    font-family: 'Press Start 2P',
+        cursive;
+    position: absolute;
+    height: 90px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    /* margin: auto; */
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+}
+
+#one {
+    color: var(--dblue);
+}
+
+#one:hover {
+    color: white;
+}
+
+#two {
+    color: var(--lblue);
+}
+
+#two:hover {
+    color: white;
+}
+
+#three {
+    color: var(--yellow);
+}
+
+#three:hover {
+    color: white;
+}
+
+#four {
+    color: var(--orange);
+}
+
+#four:hover {
+    color: white;
+}
+
+#five {
+    color: var(--red);
+}
+
+#five:hover {
+    color: white;
+}
+
+.gitHub {
+    margin-top: 250px;
+    margin-left: 195px;
+    width: 20%;
+}
+
+.instagram {
+    margin-left: 50px;
+    width: 21%;
 }
