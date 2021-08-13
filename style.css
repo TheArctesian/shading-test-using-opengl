@@ -6,9 +6,9 @@ canvas {
 }
 
 .gitHub_button {
-  transition: all ease-in-out 200ms;
+  transition: all ease-in-out 500ms;
   position: absolute;
-  bottom: 90%;
+  bottom: 5%;
   left: 90%;
   width: 5%;
   outline-style: solid;
@@ -19,7 +19,8 @@ canvas {
 }
 
 .gitHub_button:hover {
-  bottom: 80%;
+  transition: all ease-in-out 500ms;
+  bottom: 5%;
   left: 85%;
   width: 10%;
 }
