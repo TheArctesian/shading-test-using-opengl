@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+/*
+
+Okay so, this CSS is the ugliest most disgusting CSS 
+you will ever lay your eyes upon. 
+but i stole the navbar function from the same website 
+as the home page. 
+and when i looked at the css. 
+i saw this 
+and it 
+was horrible 
+and i was going to rebuild it 
+with flex or grid 
+and not use transform
+but I am just going to see 
+how far I can get  
+without the position absolute fuking me. 
+
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ ⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿
+⣿⣿⣿⣿⠉⠉⠉⠹⠛⠛⠋⠉⠙⠛⠛⠛⠛⠛ ⠿⠿⠿⠿⠋⠀⣿⣿⣿⣿
+⣿⣿⣿⣿⣤⣤⣄⣀⣀⣀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣠⣤⣤⣤⣤⣤⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+*/
+:root {
+    /*Color Pallet */
+
+    --dblue: #0066E7;
+    --lblue: #0070FF;
+    --yellow: #FFE135;
+    --orange: #F18009;
+    --red: #D4070F;
+    --dred: #C60012;
+
+    --white: rgb(226, 225, 225);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover {
+    color: var(--white);
+}
+
+.navMenu a:nth-child(2):hover {
+    color: var(--lblue);
+}
+
+.navMenu a:nth-child(3):hover {
+    color: var(--red);
+}
+
+.navMenu a:nth-child(4):hover {
+    color: var(--yellow);
+}
+
+.navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--yellow);
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.navMenu a:nth-child(1):hover~.dot {
+    -webkit-transform: translateX(40px);
+    transform: translateX(40px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+    background: var(--white);
+    -webkit-transform: translateX(120px);
+    transform: translateX(120px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+    background: var(--yellow);
+    -webkit-transform: translateX(206px);
+    transform: translateX(206px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover~.dot {
+    background: var(--yellow);
+    -webkit-transform: translateX(291px);
+    transform: translateX(291px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+#line {
+    transform: translateY(60px);
+    border-radius: 10px
+}
