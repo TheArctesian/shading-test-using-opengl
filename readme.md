@@ -6,7 +6,10 @@ Using vite and 3js
 
 Testing 3d js using three js and messing with shading
 run the following command
+    - npm install -g npm (for first time npm users) 
     - npm run dev 
-to run on local host
+*vite already in json*
 
-Also using vim for the first time
+should run on local host 3000 or som 
+
+Also using vim for the first time to write the readme, but not brave enough to port it to vs code
