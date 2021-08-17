@@ -93,8 +93,8 @@ body {
 }
 
 .navMenu .dot {
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     background: var(--yellow);
     border-radius: 50%;
     opacity: 0;
@@ -215,13 +215,25 @@ h1 {
     color: white;
 }
 
+.photos {
+    transform: translateY(235px);
+}
+
 .gitHub {
-    margin-top: 235px;
-    margin-left: 195px;
-    width: 20%;
+    transform: translateX(100%);
+    width: 22%;
 }
 
 .instagram {
-    margin-left: 50px;
-    width: 21%;
+    transform: translateX(80%);
+    width: 22%;
 }
+
+.discord {
+    transform: translateX(60%);
+    width: 20%;
+}
+
+/*
+shut up its responsive enough 
+*/

@@ -1,8 +1,12 @@
 :root {
     /*Color Pallet */
-    --purple: #F18009;
-    --Lblue: #D4070F;
-    --orange: #0066E7;
+    --dblue: #0066E7;
+    --lblue: #1ba4ff;
+    --yellow: #FFE135;
+    --orange: #F18009;
+    --red: #D4070F;
+    --dred: #C60012;
+    --grey: #151515;
     --white: rgb(226, 225, 225);
 }
 
@@ -33,7 +37,6 @@ h1 {
     font-size: 2.3em;
     left: 2em;
     color: var(--white);
-
     top: 0;
     /* background-image: linear-gradient(45deg, #1C1AAF, #FFDA13); */
 
@@ -81,7 +84,7 @@ a {
 }
 
 .link-one {
-    color: var(--orange);
+    color: var(--lblue);
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
 }
@@ -102,7 +105,7 @@ a {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: var(--orange);
+    background-color: var(--lblue);
     clip-path: circle(0% at 50% calc(50%));
     transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -146,7 +149,7 @@ a {
 }
 
 .link-two {
-    color: var(--Lblue);
+    color: var(--red);
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
 }
 
@@ -172,7 +175,7 @@ a {
             100% 120%,
             100% 100%,
             0% 110%);
-    background-color: var(--Lblue);
+    background-color: var(--red);
 
     transition: clip-path 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -199,7 +202,7 @@ a {
     transform: translate(50%, -50%) rotate(0deg) scale(0);
     transition: transform 1s ease;
 
-    background-color: var(--Lblue);
+    background-color: var(--red);
 }
 
 .link-two:hover::after {
@@ -268,7 +271,7 @@ a {
 } */
 
 .link-three {
-    color: var(--purple);
+    color: var(--orange);
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);
     line-height: 1em;
 }
@@ -289,7 +292,7 @@ a {
     height: 100%;
     top: 0;
     right: 0;
-    background-color: var(--purple);
+    background-color: var(--orange);
 
     clip-path: circle(0% at 50% calc(50%));
     transition: clip-path 1s cubic-bezier(0.65, 0, 0.35, 1);
