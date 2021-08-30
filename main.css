@@ -147,7 +147,6 @@ a {
             60% 65%,
             40% 65%);
 }
-
 .link-two {
     color: var(--red);
     transition: color 1s cubic-bezier(0.32, 0, 0.67, 0);

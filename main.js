@@ -1,5 +1,4 @@
 import './style.css';
-
 import * as THREE from 'three';
 import {
   OrbitControls
@@ -38,8 +37,7 @@ loader.load('3d models/ebi model.gltf', function (gltf) {
 
 });
 
-// Torus
-/*
+
 const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
 const material = new THREE.MeshStandardMaterial({
   color: 0xff6347
@@ -47,7 +45,6 @@ const material = new THREE.MeshStandardMaterial({
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus);
-*/
 
 //ligting
 const pointLight = new THREE.PointLight(0xffffff);
@@ -79,11 +76,10 @@ Array(200).fill().forEach(addStar);
 function animate() {
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
-  /*for torus
   torus.rotation.x += 0.01;
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.02;
-*/
+
 
 
   controls.update();
