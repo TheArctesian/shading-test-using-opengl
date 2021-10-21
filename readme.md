@@ -12,4 +12,6 @@ run the following command
 
 should run on local host 3000 or som 
 
-Also using vim for the first time to write the readme, but not brave enough to port it to vs code
+Also using vim for the first time to write the readme, but not brave enough to port it to vscode
+
+Vim is easy

@@ -26,8 +26,8 @@ camera.position.setX(-3);
 renderer.render(scene, camera);
 
 
-//ebi
-loader.load('3d models/ebi model.gltf', function (gltf) {
+//3d model
+loader.load('3d models/untitled.gltf', function (gltf) {
 
   scene.add(gltf.scene);
 
@@ -44,7 +44,7 @@ const material = new THREE.MeshStandardMaterial({
 });
 const torus = new THREE.Mesh(geometry, material);
 
-scene.add(torus);
+// scene.add(torus);
 
 //ligting
 const pointLight = new THREE.PointLight(0xffffff);
@@ -55,11 +55,11 @@ scene.add(pointLight, ambientLight);
 
 const lightHelper = new THREE.PointLightHelper(pointLight)
 const gridHelper = new THREE.GridHelper(200, 50);
-scene.add(lightHelper, gridHelper);
+// scene.add(lightHelper, gridHelper);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
-  const geometry = new THREE.BoxGeometry(0.5, .5, .5, );
+  const geometry = new THREE.SphereGeometry(0.5, .5, .5, );
   const material = new THREE.MeshStandardMaterial({
     color: 0xffffff,
   });
