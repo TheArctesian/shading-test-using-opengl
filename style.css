@@ -6,7 +6,6 @@ canvas {
 }
 
 .gitHub_button {
-  transition: all ease-in-out 500ms;
   position: absolute;
   bottom: 5%;
   left: 90%;
@@ -16,11 +15,12 @@ canvas {
   outline-width: 10%;
   background-color: white;
   border-radius: 300px;
+  opacity: 1;
+  transition: all ease-in-out 700ms;
 }
 
 .gitHub_button:hover {
-  transition: all ease-in-out 500ms;
-  bottom: 5%;
-  left: 85%;
-  width: 10%;
+
+  background-color: #60bfff;
+  outline-color: rgb(219, 219, 219);
 }
